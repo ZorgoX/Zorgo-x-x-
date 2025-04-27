@@ -4,70 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZorgoX Project</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Orbitron', sans-serif;
-  color: #00ffea;
-  text-align: center;
-}
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #000428, #004e92);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Orbitron', sans-serif;
+      color: #00ffea;
+      text-align: center;
+    }
 
-.container {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 20px #00ffea;
-  animation: pulse 2s infinite;
-}
+    .container {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #00ffea;
+      animation: pulse 2s infinite;
+    }
 
-h1 {
-  font-size: 3em;
-}
+    h1 {
+      font-size: 3em;
+    }
 
-p {
-  font-size: 1.2em;
-  margin: 20px 0;
-}
+    p {
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
 
-button {
-  padding: 10px 20px;
-  background-color: #00ffea;
-  border: none;
-  border-radius: 5px;
-  color: black;
-  font-size: 1em;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
+    button {
+      padding: 10px 20px;
+      background-color: #00ffea;
+      border: none;
+      border-radius: 5px;
+      color: black;
+      font-size: 1em;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
 
-button:hover {
-  transform: scale(1.1);
-}
+    button:hover {
+      transform: scale(1.1);
+    }
 
-@keyframes pulse {
-  0% { box-shadow: 0 0 20px #00ffea; }
-  50% { box-shadow: 0 0 40px #00ffea; }
-  100% { box-shadow: 0 0 20px #00ffea; }
-}
-<body>document.getElementById("missionButton").addEventListener("click", function() {
-  const sound = document.getElementById("alienSound");
-  sound.play();
-  alert("Missione ZorgoX: Stabilire una connessione interstellare sicura.");
-});
+    @keyframes pulse {
+      0% { box-shadow: 0 0 20px #00ffea; }
+      50% { box-shadow: 0 0 40px #00ffea; }
+      100% { box-shadow: 0 0 20px #00ffea; }
+    }
+  </style>
+</head>
+<body>
+
   <div class="container">
     <h1>Benvenuto su ZorgoX</h1>
-    <p>Alieni e umani collaborano. Criptovalute in missione...</p>
-    <button id="missionButton">Scopri la Missione</button>
+    <p>Alieni e umani collaborano. Cripta il messaggio segreto!</p>
+    <button id="missionButton">Scopri la missione</button>
   </div>
 
-  <audio id="alienSound" src="https://cdn.pixabay.com/download/audio/2023/03/26/audio_3aab23f830.mp3?filename=space-ambience-14492.mp3"></audio>
+  <audio id="alienSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_9f2b7c6354.mp3" preload="auto"></audio>
 
-  <script src="Js/main.js"></script>
+  <script>
+    document.getElementById("missionButton").addEventListener("click", () => {
+      const sound = document.getElementById("alienSound");
+      sound.play();
+      alert("Missione ZorgoX: Stabilire una comunicazione sicura!");
+    });
+  </script>
+
 </body>
 </html>
