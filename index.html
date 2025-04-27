@@ -5,7 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZorgoX Project</title>
   <link rel="stylesheet" href="css/style.css">
-</head>
+</head>body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffea;
+  text-align: center;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00ffea;
+  animation: pulse 2s infinite;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #00ffea;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 1em;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 20px #00ffea; }
+  50% { box-shadow: 0 0 40px #00ffea; }
+  100% { box-shadow: 0 0 20px #00ffea; }
+}
 <body>document.getElementById("missionButton").addEventListener("click", function() {
   const sound = document.getElementById("alienSound");
   sound.play();
