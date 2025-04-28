@@ -1,15 +1,18 @@
-// © 2025 ZorgoX - Tutti i diritti riservati
+// File: js/main.js
 
-const umanoBtn = document.getElementById("umanoBtn");
-const alienoBtn = document.getElementById("alienoBtn");
-const sound = document.getElementById("spacesound");
+document.addEventListener("DOMContentLoaded", function() {
+  const scopriButton = document.getElementById("scopri-button");
 
-umanoBtn.addEventListener("click", () => {
-  alert("Benvenuto, Umano terrestre! Pronto per il trading galattico?");
-  sound.play();
-});
+  scopriButton.addEventListener("click", function() {
+    alert("Benvenuto nella missione ZorgoX! Unisci umani e alieni nella rivoluzione crypto galattica!");
+  });
 
-alienoBtn.addEventListener("click", () => {
-  alert("Benvenuto, Alieno interstellare! Connetti il tuo wallet ZorgoX!");
-  sound.play();
+  // Anima il logo al caricamento
+  const logo = document.querySelector(".logo");
+  logo.style.transition = "transform 1s";
+  logo.style.transform = "scale(1.2)";
+
+  setTimeout(() => {
+    logo.style.transform = "scale(1)";
+  }, 1000);
 });
