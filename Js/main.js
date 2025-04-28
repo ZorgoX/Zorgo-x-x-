@@ -1,5 +1,15 @@
-document.getElementById("missionButton").addEventListener("click", function() {
-  const sound = document.getElementById("alienSound");
+// © 2025 ZorgoX - Tutti i diritti riservati
+
+const umanoBtn = document.getElementById("umanoBtn");
+const alienoBtn = document.getElementById("alienoBtn");
+const sound = document.getElementById("spacesound");
+
+umanoBtn.addEventListener("click", () => {
+  alert("Benvenuto, Umano terrestre! Pronto per il trading galattico?");
   sound.play();
-  alert("Missione ZorgoX: Stabilire una connessione interstellare sicura.");
+});
+
+alienoBtn.addEventListener("click", () => {
+  alert("Benvenuto, Alieno interstellare! Connetti il tuo wallet ZorgoX!");
+  sound.play();
 });
