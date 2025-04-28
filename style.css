@@ -1,75 +1,18 @@
-/* © 2025 ZorgoX - Tutti i diritti riservati */
+// File: js/main.js
 
-body {
-  background: linear-gradient(#000428, #004e92);
-  color: aqua;
-  font-family: 'Orbitron', sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
+document.addEventListener("DOMContentLoaded", function() {
+  const scopriButton = document.getElementById("scopri-button");
 
-header h1, header h2 {
-  margin: 20px 0 10px;
-  text-shadow: 0 0 10px cyan;
-}
+  scopriButton.addEventListener("click", function() {
+    alert("Benvenuto nella missione ZorgoX! Unisci umani e alieni nella rivoluzione crypto galattica!");
+  });
 
-.space-scene {
-  position: relative;
-  overflow: hidden;
-}
+  // Anima il logo al caricamento
+  const logo = document.querySelector(".logo");
+  logo.style.transition = "transform 1s";
+  logo.style.transform = "scale(1.2)";
 
-.spacex {
-  width: 150px;
-  animation: fly 10s linear infinite;
-  position: absolute;
-  top: 20px;
-  left: -200px;
-}
-
-@keyframes fly {
-  0% { left: -200px; top: 20px; }
-  50% { left: 50%; top: 100px; }
-  100% { left: 120%; top: 50px; }
-}
-
-.mars {
-  width: 100%;
-  opacity: 0.2;
-}
-
-.characters {
-  margin: 30px 0;
-}
-
-.alieno, .umano {
-  width: 120px;
-  margin: 10px;
-}
-
-.actions button {
-  background-color: cyan;
-  border: none;
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 18px;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 0 20px aqua;
-  transition: 0.3s;
-}
-
-.actions button:hover {
-  transform: scale(1.1);
-}
-
-.cryptos {
-  margin: 30px 0;
-}
-
-.crypto {
-  margin: 10px;
-  font-size: 20px;
-  text-shadow: 0 0 10px white;
-}
+  setTimeout(() => {
+    logo.style.transform = "scale(1)";
+  }, 1000);
+});
