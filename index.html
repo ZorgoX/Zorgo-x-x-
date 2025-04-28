@@ -1,43 +1,34 @@
-<!-- © 2025 ZorgoX - Tutti i diritti riservati -->
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZorgoX - Unione Galattica</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <h1>ZorgoX - Uniti per il Futuro</h1>
-    <h2>Umani & Alieni: Scambio Crypto da Marte alla Terra</h2>
-  </header>
+/* File: css/style.css */
 
-  <section class="space-scene">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/SpaceX_Crew_Dragon_in_orbit.jpg" alt="Nave SpaceX" class="spacex">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Martian_Landscape_-_PIA22957.jpg" alt="Marte" class="mars">
-  </section>
+body { margin: 0; padding: 0; font-family: 'Orbitron', sans-serif; background: linear-gradient(135deg, #000428, #004e92); color: #00ffea; }
 
-  <section class="characters">
-    <img src="https://cdn.pixabay.com/photo/2020/03/10/09/55/alien-4915947_960_720.png" alt="Alieno" class="alieno">
-    <img src="https://cdn.pixabay.com/photo/2022/08/14/19/26/astronaut-7386312_960_720.png" alt="Umano" class="umano">
-  </section>
+header { background: rgba(0, 0, 0, 0.7); display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; box-shadow: 0 0 10px #00ffea; }
 
-  <section class="actions">
-    <button id="umanoBtn">Sono Umano</button>
-    <button id="alienoBtn">Sono Alieno</button>
-  </section>
+.logo { font-size: 2em; font-weight: bold; }
 
-  <section class="cryptos">
-    <div class="crypto">Bitcoin</div>
-    <div class="crypto">Ethereum</div>
-    <div class="crypto">Solana</div>
-    <div class="crypto">ZorgoX Coin</div>
-  </section>
+.nav-links { list-style: none; display: flex; gap: 20px; }
 
-  <audio id="spacesound" src="https://cdn.pixabay.com/download/audio/2023/03/01/audio_1b344ad95a.mp3" preload="auto"></audio>
+.nav-links a { text-decoration: none; color: #00ffea; transition: color 0.3s; }
 
-  <script src="Js/main.js"></script>
-  <script src="Js/Updatemain.js"></script>
-</body>
-</html>
+.nav-links a:hover { color: #ffffff; }
+
+.hero { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 60px 20px; }
+
+.hero-content h1 { font-size: 3em; margin-bottom: 20px; }
+
+.hero-content p { font-size: 1.2em; margin-bottom: 30px; }
+
+button { padding: 10px 20px; background: #00ffea; border: none; border-radius: 5px; color: #000; font-size: 1em; cursor: pointer; transition: background 0.3s; }
+
+button:hover { background: #00c7b7; }
+
+.hero-image img { margin-top: 30px; width: 90%; max-width: 600px; border-radius: 20px; box-shadow: 0 0 20px #00ffea; }
+
+.unione-section, .compra-section { padding: 60px 20px; text-align: center; }
+
+.buy-button { display: inline-block; margin: 10px; padding: 15px 25px; background: #00ffea; color: #000; text-decoration: none; font-weight: bold; border-radius: 10px; transition: background 0.3s; }
+
+.buy-button:hover { background: #00c7b7; }
+
+footer { text-align: center; padding: 20px; background: rgba(0, 0, 0, 0.7); color: #00ffea; font-size: 0.9em; }
+
