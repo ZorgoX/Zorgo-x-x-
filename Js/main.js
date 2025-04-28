@@ -1,18 +1,12 @@
-// File: js/main.js
+// File: js/updatemain.js
 
-document.addEventListener("DOMContentLoaded", function() {
-  const scopriButton = document.getElementById("scopri-button");
+// Script per effetti dinamici sulla pagina
 
-  scopriButton.addEventListener("click", function() {
-    alert("Benvenuto nella missione ZorgoX! Unisci umani e alieni nella rivoluzione crypto galattica!");
-  });
+document.addEventListener("DOMContentLoaded", function() { const message = document.getElementById("dynamic-message");
 
-  // Anima il logo al caricamento
-  const logo = document.querySelector(".logo");
-  logo.style.transition = "transform 1s";
-  logo.style.transform = "scale(1.2)";
+const phrases = [ "ZorgoX: Il futuro della collaborazione!", "Umani e Alieni uniti per un'economia intergalattica!", "Acquista ora su JUP e RADAR!", "Scopri il nuovo universo crypto!" ];
 
-  setTimeout(() => {
-    logo.style.transform = "scale(1)";
-  }, 1000);
-});
+let index = 0;
+
+setInterval(() => { message.textContent = phrases[index]; index = (index + 1) % phrases.length; }, 4000); });
+
